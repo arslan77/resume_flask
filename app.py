@@ -1,5 +1,6 @@
-from flask import Flask
 import logging
+
+from flask import Flask
 from flask import request
 
 app = Flask(__name__)
@@ -14,4 +15,4 @@ def hello_world():
     return "Hi there, My name is Arslan Arshad"
 
 
-app.run()
+app.run(debug=False, host='0.0.0.0', port=5000)
